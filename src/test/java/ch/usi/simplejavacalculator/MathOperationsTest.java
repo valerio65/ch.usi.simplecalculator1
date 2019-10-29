@@ -1,0 +1,13 @@
+package ch.usi.simplejavacalculator;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class MathOperationsTest {
+
+
+
+
+
+}
