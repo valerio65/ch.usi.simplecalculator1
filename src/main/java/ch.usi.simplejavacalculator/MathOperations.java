@@ -71,10 +71,7 @@ public class MathOperations {
         return FastMath.log(num1);
     }
 
-    protected static Double rate(Double num1) {
-        //TODO rate num1/100
-        return 0.0;
-    }
+    protected static Double rate(Double num1) {return num1/100; }
 
 
 
