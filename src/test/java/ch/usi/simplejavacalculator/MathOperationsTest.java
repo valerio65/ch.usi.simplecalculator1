@@ -31,4 +31,18 @@ public class MathOperationsTest {
         assertEquals(0, MathOperations.oneDividedBy(zero), delta);
         // ∀ x ∈ R,  1/x != 0
     }
+
+    private static final double DELTA = 1e-15;
+
+
+    @Test
+    public void test1() {
+        assertEquals(MathOperations.rate(50.0), 0.5, DELTA);
+    }
+
+    @Test
+    public void test2() {
+        assertEquals(MathOperations.rate(123.4), 1.234, DELTA);
+    }
+
 }
