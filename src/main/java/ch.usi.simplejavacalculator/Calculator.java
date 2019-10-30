@@ -74,7 +74,7 @@ public class Calculator {
             return MathOperations.squareRoot(num1);
         }
         if (newMode == MonoOperatorModes.oneDevidedBy) {
-            return MathOperations.oneDevidedBy(num1);
+            return MathOperations.oneDividedBy(num1);
         }
         if (newMode == MonoOperatorModes.cos) {
             return MathOperations.cos(num1);

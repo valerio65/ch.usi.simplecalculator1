@@ -37,10 +37,20 @@ public class MathOperations {
         return 0.0;
     }
 
-    protected static Double oneDevidedBy(Double num1) {
-        // TODO
-        return 0.0;
-
+    protected static Double oneDividedBy(Double num1){
+        double result;
+        try {
+            if (num1 == 0) {
+                throw new Exception("Division by zero");
+            } else {
+                result = 1 / num1;
+            }
+        } catch (Exception e) {
+            // Division by zero
+            result = 0;
+            // ∀ x ∈ R,  1/x != 0
+        }
+        return result;
     }
 
     protected static Double cos(Double num1) {
