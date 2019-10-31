@@ -45,4 +45,19 @@ public class MathOperationsTest {
         assertEquals(MathOperations.rate(123.4), 1.234, DELTA);
     }
 
+    @Test
+    public void square0(){
+        assertEquals(0D,MathOperations.square(0D),delta);
+    }
+
+    @Test
+    public void square1(){
+        assertEquals(4D,MathOperations.square(2D),delta);
+    }
+
+    @Test
+    public void square2(){
+        assertEquals(100D,MathOperations.square(-10D),delta);
+    }
+
 }
