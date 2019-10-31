@@ -27,8 +27,7 @@ public class MathOperations {
     }
 
     protected static Double square(Double num1) {
-        //TODO
-        return 0.0;
+        return num1*num1;
     }
 
 
