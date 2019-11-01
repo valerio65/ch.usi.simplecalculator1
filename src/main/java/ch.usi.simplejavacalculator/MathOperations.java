@@ -22,8 +22,7 @@ public class MathOperations {
         return 0.0;
     }
     protected static Double xpowerofy(Double num1, Double num2) {
-        //TODO
-        return 0.0;
+        return Math.pow (num1,num2);
     }
 
     protected static Double square(Double num1) {
