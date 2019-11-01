@@ -60,4 +60,18 @@ public class MathOperationsTest {
         assertEquals(100D,MathOperations.square(-10D),delta);
     }
 
+    @Test
+    public void log0(){ assertEquals(1D, MathOperations.log(10D), delta); }
+
+    @Test
+    public void log1(){ assertEquals(Double.NaN, MathOperations.log(-1D), delta); }
+
+    @Test
+    public void log2(){ assertEquals(Double.POSITIVE_INFINITY, MathOperations.log(Double.POSITIVE_INFINITY), delta); }
+
+    @Test
+    public void log3(){ assertEquals(Double.NEGATIVE_INFINITY, MathOperations.log(0D), delta); }
+
+    @Test
+    public void log4(){ assertEquals(Double.NEGATIVE_INFINITY, MathOperations.log(-0D), delta); }
 }

@@ -67,7 +67,7 @@ public class MathOperations {
     }
 
     protected static Double log(Double num1) {
-        return FastMath.log(num1);
+        return Math.log10(num1);
     }
 
     protected static Double rate(Double num1) {return num1/100; }
