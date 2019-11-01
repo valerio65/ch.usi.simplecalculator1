@@ -22,8 +22,12 @@ public class MathOperations {
         return 0.0;
     }
     protected static Double xpowerofy(Double num1, Double num2) {
-        //TODO
-        return 0.0;
+        if (y == 0)
+            return 1;
+        else if (y % 2 == 0)
+            return power(x, y / 2) * power(x, y / 2);
+        else
+            return x * power(x, y / 2) * power(x, y / 2);
     }
 
     protected static Double square(Double num1) {
