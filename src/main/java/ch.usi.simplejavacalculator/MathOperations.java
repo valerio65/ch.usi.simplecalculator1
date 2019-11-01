@@ -22,15 +22,7 @@ public class MathOperations {
         return 0.0;
     }
     protected static Double xpowerofy(Double num1, Double num2) {
-        if (num1 == 0) {
-            return 1.0;
-        }
-        else if (num2 % 2 == 0) {
-            return xpowerofy(num1, num2 / 2) * xpowerofy(num1, num2 / 2);
-        }
-        else {
-            return num1 * xpowerofy(num1, num2 / 2) * xpowerofy(num1, num2 / 2);
-        }
+        return Math.pow (num1,num2);
     }
 
     protected static Double square(Double num1) {
