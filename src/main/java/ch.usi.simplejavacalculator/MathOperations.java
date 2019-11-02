@@ -52,8 +52,7 @@ public class MathOperations {
     }
 
     protected static Double cos(Double num1) {
-        //TODO
-        return 0.0;
+        return Math.cos(num1);
     }
 
     protected static Double sin(Double num1) {
