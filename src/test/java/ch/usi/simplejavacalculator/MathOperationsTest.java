@@ -6,7 +6,7 @@ import ch.usi.simplejavacalculator.*;
 import static org.junit.Assert.*;
 
 public class MathOperationsTest {
-
+  
     private final double delta = 0.0000001;
 
     // Test for oneDividedBy
