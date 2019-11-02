@@ -77,17 +77,17 @@ public class MathOperationsTest {
     
     @Test
     public void xpowerofy() {
-        assertEquals(1.0, m.xpowerofy(0.0, 0.0), delta);
-        assertEquals(1.0, m.xpowerofy(2.0, 0.0), delta);
-        assertEquals(0.0, m.xpowerofy(0.0, 2.0), delta);
-        assertEquals(8.0, m.xpowerofy(2.0, 3.0), delta);
+        assertEquals(1.0, MathOperations.xpowerofy(0.0, 0.0), delta);
+        assertEquals(1.0, MathOperations.xpowerofy(2.0, 0.0), delta);
+        assertEquals(0.0, MathOperations.xpowerofy(0.0, 2.0), delta);
+        assertEquals(8.0, MathOperations.xpowerofy(2.0, 3.0), delta);
     }
     
     @Test
     public void cos() {
-        assertEquals( 1.0, m.cos(0.0), delta);
-        assertEquals(-1.0, m.cos(Math.PI), delta);
-        assertEquals( 1.0, m.cos(Math.PI * 2), delta);
-        assertEquals(-1.0, m.cos(Math.PI * 3), delta);
+        assertEquals( 1.0, MathOperations.cos(0.0), delta);
+        assertEquals(-1.0, MathOperations.cos(Math.PI), delta);
+        assertEquals( 1.0, MathOperations.cos(Math.PI * 2), delta);
+        assertEquals(-1.0, MathOperations.cos(Math.PI * 3), delta);
     }
 }
