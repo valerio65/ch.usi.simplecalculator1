@@ -61,7 +61,7 @@ public class MathOperations {
     }
 
     protected static Double tan(Double num1) {
-        return 0.0;
+        return FastMath.tan(num1);
     }
 
     protected static Double log(Double num1) {

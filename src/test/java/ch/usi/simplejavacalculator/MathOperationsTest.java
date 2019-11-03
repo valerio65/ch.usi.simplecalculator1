@@ -1,5 +1,6 @@
 package ch.usi.simplejavacalculator;
 
+import org.apache.commons.math3.util.FastMath;
 import org.junit.Test;
 import ch.usi.simplejavacalculator.*;
 
@@ -89,5 +90,18 @@ public class MathOperationsTest {
         assertEquals(-1.0, MathOperations.cos(Math.PI), delta);
         assertEquals( 1.0, MathOperations.cos(Math.PI * 2), delta);
         assertEquals(-1.0, MathOperations.cos(Math.PI * 3), delta);
+    }
+
+    @Test
+    public void tan0() {
+        double expected = 0.0;
+        assertEquals(expected, MathOperations.tan(0.0), 0.0000001);
+        assertEquals(expected, MathOperations.tan(FastMath.PI), 0.0000001);
+    }
+
+    @Test
+    public void tan1() {
+        double expected = 1;
+        assertEquals(expected, MathOperations.tan(FastMath.PI/4), 0.0000001);
     }
 }
